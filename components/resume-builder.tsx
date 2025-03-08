@@ -117,13 +117,7 @@ export function ResumeBuilder() {
       <div className="flex flex-col sm:flex-row justify-between gap-3 items-start sm:items-center">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-800 dark:text-white">Build Your ATS-Optimized Resume</h2>
 
-        {/* Desktop buttons */}
-        <div className="hidden sm:flex gap-2">
-          <Button variant="outline" size="sm" onClick={handleNewResume} className="flex items-center gap-1">
-            <Plus className="h-4 w-4" />
-            New Resume
-          </Button>
-        </div>
+        
       </div>
 
       <div className="flex flex-col md:flex-row gap-4">
