@@ -23,7 +23,7 @@ export function ResumeBuilder() {
   const { toast } = useToast()
   const isMobile = useMobile()
 
-  // Close sidebar by default on mobile
+  
   useEffect(() => {
     if (isMobile) {
       setSidebarOpen(false)
@@ -41,7 +41,7 @@ export function ResumeBuilder() {
   }
 
   const handleDownload = () => {
-    // In a real implementation, this would generate a PDF
+    
     toast({
       title: "Resume Downloaded",
       description: "Your resume has been downloaded successfully.",
