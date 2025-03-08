@@ -5,7 +5,6 @@ import { ResumeForm } from "@/components/resume-form"
 import { ResumePreview } from "@/components/resume-preview"
 import { ThemeSelector } from "@/components/theme-selector"
 import { ResumeScoreChecker } from "@/components/resume-score-checker"
-import { ResumeImporter } from "@/components/resume-importer"
 import { Button } from "@/components/ui/button"
 import { Download, Upload, Plus, Menu, X, Edit, BarChart3, Eye } from "lucide-react"
 import { useToast } from "@/components/ui/use-toast"
@@ -120,16 +119,6 @@ export function ResumeBuilder() {
 
         {/* Desktop buttons */}
         <div className="hidden sm:flex gap-2">
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => setShowImporter(true)}
-            className="flex items-center gap-1"
-            disabled={showImporter}
-          >
-            <Upload className="h-4 w-4" />
-            Import Resume
-          </Button>
           <Button variant="outline" size="sm" onClick={handleNewResume} className="flex items-center gap-1">
             <Plus className="h-4 w-4" />
             New Resume
@@ -201,16 +190,6 @@ export function ResumeBuilder() {
             {/* Sidebar actions - only visible on desktop */}
             <div className="p-2 border-t dark:border-gray-700 hidden md:block">
               <div className="space-y-1">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => setShowImporter(true)}
-                  className="w-full justify-start"
-                  disabled={showImporter}
-                >
-                  <Upload className="h-4 w-4 mr-2" />
-                  Import Resume
-                </Button>
                 <Button variant="outline" size="sm" onClick={handleNewResume} className="w-full justify-start">
                   <Plus className="h-4 w-4 mr-2" />
                   New Resume
