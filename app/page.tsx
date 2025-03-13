@@ -1,6 +1,7 @@
 import { ResumeBuilder } from "@/components/resume-builder"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Logo } from "@/components/logo"
+import { Github } from "lucide-react"
 
 export default function Home() {
   return (
@@ -18,6 +19,15 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <Logo size="sm" />
+            <a 
+                href="https://github.com/yourusername" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+                aria-label="GitHub Profile"
+              >
+                <Github size={24} />
+              </a>
             <p className="text-center text-sm text-gray-500 dark:text-gray-400">
               © {new Date().getFullYear()} ResumeAce ATS. All rights reserved.
             </p>
